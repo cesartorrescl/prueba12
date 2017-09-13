@@ -2,7 +2,7 @@
 /**
  * Insertar un nuevo alumno en la base de datos
  */
-echo ("hola");
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
