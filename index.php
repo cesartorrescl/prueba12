@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
 
     if (($body['nombre']=="Cesar" && $body['pass']=="clave")||($body['nombre']=="admin" && $body['pass']=="admin")) {
-        $json_string = json_encode(array("estado" => 1,"mensaje" => "Creacion correcta"));
+        $json_string = json_encode(array("estado" => 1,"mensaje" => "Acceso concedido","Id"=>2));
 		echo $json_string;
     } else {
         $json_string = json_encode(array("estado" => 2,"mensaje" => "No se creo el registro"));
