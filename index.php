@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
         
 
-    if ($body['nombre']=="Cesar" && $body['pass']=="clave") {
+    if (($body['nombre']=="Cesar" && $body['pass']=="clave")||($body['nombre']=="admin" && $body['pass']=="admin")) {
         $json_string = json_encode(array("estado" => 1,"mensaje" => "Creacion correcta"));
 		echo $json_string;
     } else {
