@@ -27,6 +27,7 @@ class Database
             self::getDb();
         } catch (PDOException $e) {
             // Manejo de excepciones
+            echo"no funca";
         }
 
 
