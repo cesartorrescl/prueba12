@@ -55,7 +55,7 @@ class Database
         if (self::$pdo == null) {
             self::$pdo = new PDO(
                 'pgsql:dbname=' . DATABASE .
-                ';host=' . HOSTNAME .
+                ';host=' . HOSTNAME
                 , // Eliminar este elemento si se usa una instalación por defecto
                 USERNAME,
                 PASSWORD
