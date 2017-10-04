@@ -11,7 +11,7 @@ class Database
 {
 
     /**
-     * 趎ica instancia de la clase
+     * 脷nica instancia de la clase
      */
     private static $db = null;
 
@@ -23,7 +23,7 @@ class Database
     final private function __construct()
     {
         try {
-            // Crear nueva conexi髇 PDO
+            // Crear nueva conexi贸n PDO
             self::getDb();
         } catch (PDOException $e) {
             // Manejo de excepciones
@@ -33,7 +33,7 @@ class Database
     }
 
     /**
-     * Retorna en la 鷑ica instancia de la clase
+     * Retorna en la 煤nica instancia de la clase
      * @return Database|null
      */
     public static function getInstance()
@@ -45,8 +45,8 @@ class Database
     }
 
     /**
-     * Crear una nueva conexi髇 PDO basada
-     * en los datos de conexi髇
+     * Crear una nueva conexi贸n PDO basada
+     * en los datos de conexi贸n
      * @return PDO Objeto PDO
      */
     public function getDb()
@@ -55,9 +55,9 @@ class Database
             self::$pdo = new PDO(
                 'pgsql:dbname=' . DATABASE .
                 ';host=' . HOSTNAME .
-                ';port:5432;', // Eliminar este elemento si se usa una instalaci髇 por defecto
+                ';port:5432;', // Eliminar este elemento si se usa una instalaci贸n por defecto
                 USERNAME,
-                PASSWORD)
+                PASSWORD
             );
 
             // Habilitar excepciones
@@ -68,7 +68,7 @@ class Database
     }
 
     /**
-     * Evita la clonaci髇 del objeto
+     * Evita la clonaci贸n del objeto
      */
     final protected function __clone()
     {
