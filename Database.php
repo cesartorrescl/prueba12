@@ -56,7 +56,7 @@ class Database
             self::$pdo = new PDO(
                 'pgsql:dbname=' . DATABASE .
                 ';host=' . HOSTNAME .
-                ';port:5432;', // Eliminar este elemento si se usa una instalación por defecto
+                , // Eliminar este elemento si se usa una instalación por defecto
                 USERNAME,
                 PASSWORD
             );
