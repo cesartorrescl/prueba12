@@ -42,8 +42,14 @@ class Alumnos
      * @return mixed
      */
     public static function insert(
-        $nombre,
-        $direccion
+                $patente,
+                $punto_gps,
+                $usuario,
+                $vidrio,
+                $papel,
+                $lata,
+                $carton,
+                $ruta
     )
     {
         // Sentencia INSERT
